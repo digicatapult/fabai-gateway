@@ -24,7 +24,7 @@ serves them from a cache, offline.
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph device[User device or kiosk]
         client[Chat app] --> check[Seal check]
         check -->|All three checks pass: attested key| seal[App seals the prompt]
